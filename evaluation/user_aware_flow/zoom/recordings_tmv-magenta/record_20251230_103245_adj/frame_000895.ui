@@ -1,0 +1,144 @@
+{
+  "parameters": [
+    {
+      "subject": "Emily",
+      "sender": "Emily",
+      "recipient": "Alice",
+      "type": "audio",
+      "value": "unmute"
+    },
+    {
+      "subject": "Emily",
+      "sender": "Emily",
+      "recipient": "Alice",
+      "type": "video",
+      "value": "low"
+    },
+    {
+      "subject": "Emily",
+      "sender": "Emily",
+      "recipient": "Bob",
+      "type": "audio",
+      "value": "unmute"
+    },
+    {
+      "subject": "Emily",
+      "sender": "Emily",
+      "recipient": "Bob",
+      "type": "video",
+      "value": "low"
+    },
+    {
+      "subject": "Emily",
+      "sender": "Emily",
+      "recipient": "Charlie",
+      "type": "audio",
+      "value": "unmute"
+    },
+    {
+      "subject": "Emily",
+      "sender": "Emily",
+      "recipient": "Charlie",
+      "type": "video",
+      "value": "low"
+    },
+    {
+      "subject": "Emily",
+      "sender": "Emily",
+      "recipient": "David",
+      "type": "audio",
+      "value": "unmute"
+    },
+    {
+      "subject": "Emily",
+      "sender": "Emily",
+      "recipient": "David",
+      "type": "video",
+      "value": "low"
+    },
+    {
+      "subject": "Emily",
+      "sender": "Emily",
+      "recipient": "Fred",
+      "type": "audio",
+      "value": "unknown"
+    },
+    {
+      "subject": "Emily",
+      "sender": "Emily",
+      "recipient": "Fred",
+      "type": "video",
+      "value": "unknown"
+    },
+    {
+      "subject": "Alice",
+      "sender": "Alice",
+      "recipient": "Emily",
+      "type": "audio",
+      "value": "unmute"
+    },
+    {
+      "subject": "Alice",
+      "sender": "Alice",
+      "recipient": "Emily",
+      "type": "video",
+      "value": "low"
+    },
+    {
+      "subject": "Bob",
+      "sender": "Bob",
+      "recipient": "Emily",
+      "type": "audio",
+      "value": "unmute"
+    },
+    {
+      "subject": "Bob",
+      "sender": "Bob",
+      "recipient": "Emily",
+      "type": "video",
+      "value": "low"
+    },
+    {
+      "subject": "Charlie",
+      "sender": "Charlie",
+      "recipient": "Emily",
+      "type": "audio",
+      "value": "unmute"
+    },
+    {
+      "subject": "Charlie",
+      "sender": "Charlie",
+      "recipient": "Emily",
+      "type": "video",
+      "value": "high"
+    },
+    {
+      "subject": "David",
+      "sender": "David",
+      "recipient": "Emily",
+      "type": "audio",
+      "value": "unmute"
+    },
+    {
+      "subject": "David",
+      "sender": "David",
+      "recipient": "Emily",
+      "type": "video",
+      "value": "low"
+    },
+    {
+      "subject": "Fred",
+      "sender": "Fred",
+      "recipient": "Emily",
+      "type": "audio",
+      "value": "unknown"
+    },
+    {
+      "subject": "Fred",
+      "sender": "Fred",
+      "recipient": "Emily",
+      "type": "video",
+      "value": "unknown"
+    }
+  ]
+}

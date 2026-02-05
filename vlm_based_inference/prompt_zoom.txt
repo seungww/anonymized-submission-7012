@@ -1,0 +1,10 @@
+You see a Zoom meeting screenshot.
+Participants: Alice, Bob, Charlie, David, Emily, Fred.
+If a name is not visible, set audio="unknown" and video="unknown".
+If a name is visible, set audio="unmute" and video="low" by default.
+If the video tile is a solid color with one capital letter, set video="off".
+Layout rules: if all tiles are the same size, set video="medium" for all visible tiles except "off". If one tile is much larger, set that tile to video="high" and all other visible tiles to "low", except "off".
+Audio rule: only if a mute icon is clearly visible, set audio="mute". Otherwise keep audio="unmute".
+ONLY output a single JSON: {
+"context": { "Alice": {"audio":"mute|unmute|unknown","video":"off|high|medium|low|unknown"}, "Bob": {...}, ...},
+}

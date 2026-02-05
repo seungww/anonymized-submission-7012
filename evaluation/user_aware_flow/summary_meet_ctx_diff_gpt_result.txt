@@ -1,0 +1,12 @@
+audio_total: match=534, mismatch=0, missing_value_in_adj=0, missing_value_in_ori=0
+video_total: match=534, mismatch=0, missing_value_in_adj=0, missing_value_in_ori=0
+audio_total: match=525, mismatch=9, missing_value_in_adj=0, missing_value_in_ori=0
+video_total: match=529, mismatch=5, missing_value_in_adj=0, missing_value_in_ori=0
+audio_total: match=527, mismatch=7, missing_value_in_adj=0, missing_value_in_ori=0
+video_total: match=534, mismatch=0, missing_value_in_adj=0, missing_value_in_ori=0
+audio_total: match=534, mismatch=0, missing_value_in_adj=0, missing_value_in_ori=0
+video_total: match=534, mismatch=0, missing_value_in_adj=0, missing_value_in_ori=0
+audio_total: match=532, mismatch=2, missing_value_in_adj=0, missing_value_in_ori=0
+video_total: match=529, mismatch=5, missing_value_in_adj=0, missing_value_in_ori=0
+audio_total: match=534, mismatch=0, missing_value_in_adj=0, missing_value_in_ori=0
+video_total: match=534, mismatch=0, missing_value_in_adj=0, missing_value_in_ori=0

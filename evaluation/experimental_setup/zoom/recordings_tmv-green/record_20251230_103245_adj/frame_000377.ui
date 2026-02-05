@@ -1,0 +1,144 @@
+{
+  "parameters": [
+    {
+      "subject": "Bob",
+      "sender": "Bob",
+      "recipient": "Alice",
+      "type": "audio",
+      "value": "unmute"
+    },
+    {
+      "subject": "Bob",
+      "sender": "Bob",
+      "recipient": "Alice",
+      "type": "video",
+      "value": "low"
+    },
+    {
+      "subject": "Bob",
+      "sender": "Bob",
+      "recipient": "Charlie",
+      "type": "audio",
+      "value": "unmute"
+    },
+    {
+      "subject": "Bob",
+      "sender": "Bob",
+      "recipient": "Charlie",
+      "type": "video",
+      "value": "low"
+    },
+    {
+      "subject": "Bob",
+      "sender": "Bob",
+      "recipient": "David",
+      "type": "audio",
+      "value": "unmute"
+    },
+    {
+      "subject": "Bob",
+      "sender": "Bob",
+      "recipient": "David",
+      "type": "video",
+      "value": "low"
+    },
+    {
+      "subject": "Bob",
+      "sender": "Bob",
+      "recipient": "Emily",
+      "type": "audio",
+      "value": "unmute"
+    },
+    {
+      "subject": "Bob",
+      "sender": "Bob",
+      "recipient": "Emily",
+      "type": "video",
+      "value": "low"
+    },
+    {
+      "subject": "Bob",
+      "sender": "Bob",
+      "recipient": "Fred",
+      "type": "audio",
+      "value": "unknown"
+    },
+    {
+      "subject": "Bob",
+      "sender": "Bob",
+      "recipient": "Fred",
+      "type": "video",
+      "value": "unknown"
+    },
+    {
+      "subject": "Alice",
+      "sender": "Alice",
+      "recipient": "Bob",
+      "type": "audio",
+      "value": "unmute"
+    },
+    {
+      "subject": "Alice",
+      "sender": "Alice",
+      "recipient": "Bob",
+      "type": "video",
+      "value": "low"
+    },
+    {
+      "subject": "Charlie",
+      "sender": "Charlie",
+      "recipient": "Bob",
+      "type": "audio",
+      "value": "unmute"
+    },
+    {
+      "subject": "Charlie",
+      "sender": "Charlie",
+      "recipient": "Bob",
+      "type": "video",
+      "value": "high"
+    },
+    {
+      "subject": "David",
+      "sender": "David",
+      "recipient": "Bob",
+      "type": "audio",
+      "value": "unmute"
+    },
+    {
+      "subject": "David",
+      "sender": "David",
+      "recipient": "Bob",
+      "type": "video",
+      "value": "off"
+    },
+    {
+      "subject": "Emily",
+      "sender": "Emily",
+      "recipient": "Bob",
+      "type": "audio",
+      "value": "unmute"
+    },
+    {
+      "subject": "Emily",
+      "sender": "Emily",
+      "recipient": "Bob",
+      "type": "video",
+      "value": "low"
+    },
+    {
+      "subject": "Fred",
+      "sender": "Fred",
+      "recipient": "Bob",
+      "type": "audio",
+      "value": "unknown"
+    },
+    {
+      "subject": "Fred",
+      "sender": "Fred",
+      "recipient": "Bob",
+      "type": "video",
+      "value": "unknown"
+    }
+  ]
+}

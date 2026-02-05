@@ -1,0 +1,37 @@
+[2025-12-30 23:13:07] tmv-green: ./start_record.sh started
+[OK] Recording started (PID 650304)
+[OK] Tcpdump started (PID 650305)
+[2025-12-30 23:13:08] tmv-green: ./start_record.sh completed
+
+[2025-12-30 23:13:25] tmv-green: ./click_join_meeting.sh keo-ytfs-xis started
+[INFO] Target Google Meet URL: https://meet.google.com/keo-ytfs-xis
+[OK] Found Firefox window: 35651605
+[OK] Enter key sent. Google Meet opening.
+[OK] Clicked join button
+[2025-12-30 23:13:35] tmv-green: ./click_join_meeting.sh keo-ytfs-xis completed
+
+[2025-12-30 23:14:52] tmv-green: ./action_fourth_pin.sh started
+[OK] Found Firefox window: 35651605
+[OK] Action Pinning
+[2025-12-30 23:15:01] tmv-green: ./action_fourth_pin.sh completed
+
+[2025-12-30 23:15:30] tmv-green: ./action_unpin.sh started
+[OK] Found Firefox window: 35651605
+[OK] Action Pinning
+[2025-12-30 23:15:38] tmv-green: ./action_unpin.sh completed
+
+[2025-12-30 23:15:49] tmv-green: ./toggle_audio.sh started
+[OK] Found Firefox window: 35651605
+[OK] Sent Ctrl+D to Meet
+[2025-12-30 23:15:50] tmv-green: ./toggle_audio.sh completed
+
+[2025-12-30 23:16:21] tmv-green: ./stop_record.sh started
+[OK] Recording stopped
+[OK] tcpdump stopped
+[2025-12-30 23:16:22] tmv-green: ./stop_record.sh completed
+
+[2025-12-30 23:16:22] tmv-green: ./toggle_end.sh started
+[INFO] Navigating to https://meet.google.com
+[OK] Found Firefox window: 35651605
+[2025-12-30 23:16:29] tmv-green: ./toggle_end.sh completed
+

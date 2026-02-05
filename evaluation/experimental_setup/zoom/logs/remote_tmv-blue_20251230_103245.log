@@ -1,0 +1,46 @@
+[2025-12-30 19:32:44] tmv-blue: ./start_record.sh started
+[OK] Recording started (PID 697644)
+[OK] Tcpdump started (PID 697645)
+[2025-12-30 19:32:45] tmv-blue: ./start_record.sh completed
+
+[2025-12-30 19:33:41] tmv-blue: ./maximize_zoom.sh started
+[OK] Zoom window width matches screen width
+[INFO] Zoom window size: 1512x916, Screen size: 1512x948
+[2025-12-30 19:33:42] tmv-blue: ./maximize_zoom.sh completed
+
+[2025-12-30 19:33:43] tmv-blue: ./click_join_meeting.sh started
+[OK] Mouse moved and click sent to Zoom Workplace
+[OK] Wait 5 seconds
+[OK] Enter meeting ID
+[OK] Wait 3 seconds
+[OK] Enter meeting PW
+[OK] Wait 10 seconds
+[2025-12-30 19:34:04] tmv-blue: ./click_join_meeting.sh completed
+
+[2025-12-30 19:34:05] tmv-blue: ./change_to_speaker.sh started
+[OK] Meeting window found and maximize command sent
+[OK] Change to speaker view
+[2025-12-30 19:34:13] tmv-blue: ./change_to_speaker.sh completed
+
+[2025-12-30 19:34:14] tmv-blue: ./toggle_audio.sh started
+[OK] Sent Alt+A to Zoom
+[2025-12-30 19:34:14] tmv-blue: ./toggle_audio.sh completed
+
+[2025-12-30 19:34:15] tmv-blue: ./toggle_video.sh started
+[OK] Sent Alt+V to Zoom
+[2025-12-30 19:34:15] tmv-blue: ./toggle_video.sh completed
+
+[2025-12-30 19:37:24] tmv-blue: ./action_fourth_pin.sh started
+[OK] Sent Alt+U to Zoom
+[OK] Action Pinning
+[2025-12-30 19:37:41] tmv-blue: ./action_fourth_pin.sh completed
+
+[2025-12-30 19:37:51] tmv-blue: ./toggle_audio.sh started
+[OK] Sent Alt+A to Zoom
+[2025-12-30 19:37:51] tmv-blue: ./toggle_audio.sh completed
+
+[2025-12-30 19:38:06] tmv-blue: ./stop_record.sh started
+[OK] Recording stopped
+[OK] tcpdump stopped
+[2025-12-30 19:38:06] tmv-blue: ./stop_record.sh completed
+

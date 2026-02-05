@@ -1,0 +1,28 @@
+{
+  "context": {
+    "Alice": {
+      "audio": "unmute",
+      "video": "low"
+    },
+    "Bob": {
+      "audio": "unmute",
+      "video": "low"
+    },
+    "Charlie": {
+      "audio": "unmute",
+      "video": "low"
+    },
+    "David": {
+      "audio": "mute",
+      "video": "high"
+    },
+    "Emily": {
+      "audio": "unmute",
+      "video": "low"
+    },
+    "Fred": {
+      "audio": "unknown",
+      "video": "unknown"
+    }
+  }
+}

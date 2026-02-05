@@ -1,0 +1,24 @@
+[2025-12-30 19:32:44] tmv-yellow: ./start_record.sh started
+[OK] Recording started (PID 819679)
+[OK] Tcpdump started (PID 819680)
+[2025-12-30 19:32:45] tmv-yellow: ./start_record.sh completed
+
+[2025-12-30 19:35:42] tmv-yellow: ./maximize_zoom.sh started
+[OK] Zoom window width matches screen width
+[INFO] Zoom window size: 1512x916, Screen size: 1512x948
+[2025-12-30 19:35:43] tmv-yellow: ./maximize_zoom.sh completed
+
+[2025-12-30 19:35:44] tmv-yellow: ./click_join_meeting.sh started
+[OK] Mouse moved and click sent to Zoom Workplace
+[OK] Wait 5 seconds
+[OK] Enter meeting ID
+[OK] Wait 3 seconds
+[OK] Enter meeting PW
+[OK] Wait 10 seconds
+[2025-12-30 19:36:05] tmv-yellow: ./click_join_meeting.sh completed
+
+[2025-12-30 19:38:06] tmv-yellow: ./stop_record.sh started
+[OK] Recording stopped
+[OK] tcpdump stopped
+[2025-12-30 19:38:06] tmv-yellow: ./stop_record.sh completed
+

@@ -1,0 +1,28 @@
+== frame_000731.json ==
+people_total=6
+people_exact_match=1
+people_with_any_diff=5
+audio: match=6, mismatch=0, missing_value_in_adj=0, missing_value_in_ori=0
+video: match=1, mismatch=5, missing_value_in_adj=0, missing_value_in_ori=0
+diffs(5):
+- Alice.video: adj='medium' ori='high'
+- Bob.video: adj='medium' ori='low'
+- Charlie.video: adj='medium' ori='low'
+- David.video: adj='medium' ori='low'
+- Emily.video: adj='medium' ori='low'
+== frame_000871.json ==
+people_total=6
+people_exact_match=4
+people_with_any_diff=2
+audio: match=4, mismatch=2, missing_value_in_adj=0, missing_value_in_ori=0
+video: match=6, mismatch=0, missing_value_in_adj=0, missing_value_in_ori=0
+diffs(2):
+- Bob.audio: adj='mute' ori='unmute'
+- Emily.audio: adj='unmute' ori='mute'
+== GLOBAL SUMMARY ==
+files_total=89
+files_matched=87
+files_mismatched=2
+files_missing_in_adj=0
+audio_total: match=532, mismatch=2, missing_value_in_adj=0, missing_value_in_ori=0
+video_total: match=529, mismatch=5, missing_value_in_adj=0, missing_value_in_ori=0

@@ -1,0 +1,42 @@
+[2025-12-30 19:32:44] tmv-red: ./start_record.sh started
+[OK] Recording started (PID 859758)
+[OK] Tcpdump started (PID 859759)
+[2025-12-30 19:32:44] tmv-red: ./start_record.sh completed
+
+[2025-12-30 19:32:45] tmv-red: ./maximize_zoom.sh started
+[OK] Zoom window width matches screen width
+[INFO] Zoom window size: 1512x916, Screen size: 1512x948
+[2025-12-30 19:32:46] tmv-red: ./maximize_zoom.sh completed
+
+[2025-12-30 19:32:47] tmv-red: ./click_new_meeting.sh started
+[OK] Mouse moved and click sent to Zoom Workplace
+[OK] Wait 5 seconds
+[2025-12-30 19:32:52] tmv-red: ./click_new_meeting.sh completed
+
+[2025-12-30 19:32:53] tmv-red: ./change_to_speaker.sh started
+[OK] Meeting window found and maximize command sent
+[OK] Change to speaker view
+[2025-12-30 19:33:01] tmv-red: ./change_to_speaker.sh completed
+
+[2025-12-30 19:33:02] tmv-red: ./toggle_audio.sh started
+[OK] Sent Alt+A to Zoom
+[2025-12-30 19:33:03] tmv-red: ./toggle_audio.sh completed
+
+[2025-12-30 19:33:04] tmv-red: ./toggle_video.sh started
+[OK] Sent Alt+V to Zoom
+[2025-12-30 19:33:04] tmv-red: ./toggle_video.sh completed
+
+[2025-12-30 19:35:28] tmv-red: ./toggle_waiting_room.sh started
+[OK] Enable waiting room
+[2025-12-30 19:35:37] tmv-red: ./toggle_waiting_room.sh completed
+
+[2025-12-30 19:38:01] tmv-red: ./toggle_end.sh started
+[OK] Sent Alt+Q to Zoom
+[OK] Sent Enter to Zoom
+[2025-12-30 19:38:05] tmv-red: ./toggle_end.sh completed
+
+[2025-12-30 19:38:06] tmv-red: ./stop_record.sh started
+[OK] Recording stopped
+[OK] tcpdump stopped
+[2025-12-30 19:38:06] tmv-red: ./stop_record.sh completed
+

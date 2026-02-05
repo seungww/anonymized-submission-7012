@@ -1,0 +1,17 @@
+=== Segmentation statistics ===
+Total lines read (paired):          5000
+Lines actually compared:            5000
+Lines skipped due to base mismatch: 0
+
+Total positions considered: 225992
+True positives (TP):        50312
+False positives (FP):       62633
+False negatives (FN):       9
+True negatives (TN):        113038
+
+=== Metrics ===
+Precision (TP / (TP + FP)):          0.4455
+Recall    (TP / (TP + FN)):          0.9998
+F1 score:                            0.6163
+Accuracy ((TP + TN) / All positions): 0.7228
+False positive rate (FP / (FP + TN)): 0.35653579702967480580255710265191737562417984

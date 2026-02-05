@@ -1,0 +1,32 @@
+[2025-12-30 23:13:07] tmv-red: ./start_record.sh started
+[OK] Recording started (PID 871322)
+[OK] Tcpdump started (PID 871323)
+[2025-12-30 23:13:08] tmv-red: ./start_record.sh completed
+
+[2025-12-30 23:13:08] tmv-red: ./click_new_meeting.sh started
+[INFO] Navigating to https://meet.google.com
+[OK] Found Firefox window: 37748757
+[INFO] Copied link: https://meet.google.com/keo-ytfs-xis
+keo-ytfs-xis
+[2025-12-30 23:13:25] tmv-red: ./click_new_meeting.sh completed with code: keo-ytfs-xis
+
+[2025-12-30 23:14:29] tmv-red: ./click_admission.sh started
+[OK] Found Firefox window: 37748757
+[OK] Clicked at 1333 909
+[OK] Clicked at 1392 445 (1/5)
+[OK] Clicked at 1392 445 (2/5)
+[OK] Clicked at 1392 445 (3/5)
+[OK] Clicked at 1392 445 (4/5)
+[OK] Clicked at 1333 909
+[2025-12-30 23:14:47] tmv-red: ./click_admission.sh completed
+
+[2025-12-30 23:16:21] tmv-red: ./stop_record.sh started
+[OK] Recording stopped
+[OK] tcpdump stopped
+[2025-12-30 23:16:22] tmv-red: ./stop_record.sh completed
+
+[2025-12-30 23:16:22] tmv-red: ./toggle_end.sh started
+[INFO] Navigating to https://meet.google.com
+[OK] Found Firefox window: 37748757
+[2025-12-30 23:16:29] tmv-red: ./toggle_end.sh completed
+

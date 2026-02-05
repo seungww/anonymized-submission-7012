@@ -1,0 +1,16 @@
+Total: 32737
+Empty: 1721
+Found TRIPLE: 11501
+Found PERFECT: 16830
+Found PARTIAL: 646
+Case 1: 68
+Case 2: 156
+Others: 1815
+- Bob_Alice_Bob_video_high: 712
+- Charlie_Alice_Charlie_video_high: 634
+- Emily_Alice_Emily_video_high: 203
+- Bob_Alice_Bob_video_low: 91
+- David_Alice_David_video_high: 53
+- Emily_Alice_Emily_video_low: 49
+- David_Alice_David_video_low: 41
+- Charlie_Alice_Charlie_video_low: 32

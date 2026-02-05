@@ -1,0 +1,42 @@
+[2025-12-30 19:32:44] tmv-cyan: ./start_record.sh started
+[OK] Recording started (PID 911799)
+[OK] Tcpdump started (PID 911800)
+[2025-12-30 19:32:45] tmv-cyan: ./start_record.sh completed
+
+[2025-12-30 19:34:16] tmv-cyan: ./maximize_zoom.sh started
+[OK] Zoom window width matches screen width
+[INFO] Zoom window size: 1512x916, Screen size: 1512x948
+[2025-12-30 19:34:18] tmv-cyan: ./maximize_zoom.sh completed
+
+[2025-12-30 19:34:19] tmv-cyan: ./click_join_meeting.sh started
+[OK] Mouse moved and click sent to Zoom Workplace
+[OK] Wait 5 seconds
+[OK] Enter meeting ID
+[OK] Wait 3 seconds
+[OK] Enter meeting PW
+[OK] Wait 10 seconds
+[2025-12-30 19:34:40] tmv-cyan: ./click_join_meeting.sh completed
+
+[2025-12-30 19:34:41] tmv-cyan: ./change_to_speaker.sh started
+[OK] Meeting window found and maximize command sent
+[OK] Change to speaker view
+[2025-12-30 19:34:48] tmv-cyan: ./change_to_speaker.sh completed
+
+[2025-12-30 19:34:49] tmv-cyan: ./toggle_audio.sh started
+[OK] Sent Alt+A to Zoom
+[2025-12-30 19:34:50] tmv-cyan: ./toggle_audio.sh completed
+
+[2025-12-30 19:34:51] tmv-cyan: ./toggle_video.sh started
+[OK] Sent Alt+V to Zoom
+[2025-12-30 19:34:51] tmv-cyan: ./toggle_video.sh completed
+
+[2025-12-30 19:36:58] tmv-cyan: ./action_second_pin.sh started
+[OK] Sent Alt+U to Zoom
+[OK] Action Pinning
+[2025-12-30 19:37:14] tmv-cyan: ./action_second_pin.sh completed
+
+[2025-12-30 19:38:06] tmv-cyan: ./stop_record.sh started
+[OK] Recording stopped
+[OK] tcpdump stopped
+[2025-12-30 19:38:06] tmv-cyan: ./stop_record.sh completed
+

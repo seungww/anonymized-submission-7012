@@ -1,0 +1,238 @@
+[2025-12-30 19:32:44] tmv-red: ./start_record.sh started
+[2025-12-30 19:32:44] tmv-blue: ./start_record.sh started
+[2025-12-30 19:32:44] tmv-green: ./start_record.sh started
+[2025-12-30 19:32:44] tmv-magenta: ./start_record.sh started
+[2025-12-30 19:32:44] tmv-cyan: ./start_record.sh started
+[2025-12-30 19:32:44] tmv-yellow: ./start_record.sh started
+[OK] Recording started (PID 859758)
+[OK] Tcpdump started (PID 859759)
+[2025-12-30 19:32:44] tmv-red: ./start_record.sh completed
+
+[OK] Recording started (PID 819679)
+[OK] Tcpdump started (PID 819680)
+[2025-12-30 19:32:45] tmv-yellow: ./start_record.sh completed
+
+[OK] Recording started (PID 640509)
+[OK] Tcpdump started (PID 640510)
+[2025-12-30 19:32:45] tmv-green: ./start_record.sh completed
+
+[OK] Recording started (PID 697644)
+[OK] Tcpdump started (PID 697645)
+[2025-12-30 19:32:45] tmv-blue: ./start_record.sh completed
+
+[OK] Recording started (PID 837362)
+[OK] Tcpdump started (PID 837363)
+[2025-12-30 19:32:45] tmv-magenta: ./start_record.sh completed
+
+[OK] Recording started (PID 911799)
+[OK] Tcpdump started (PID 911800)
+[2025-12-30 19:32:45] tmv-cyan: ./start_record.sh completed
+
+[2025-12-30 19:32:45] tmv-red: ./maximize_zoom.sh started
+[OK] Zoom window width matches screen width
+[INFO] Zoom window size: 1512x916, Screen size: 1512x948
+[2025-12-30 19:32:46] tmv-red: ./maximize_zoom.sh completed
+
+[2025-12-30 19:32:47] tmv-red: ./click_new_meeting.sh started
+[OK] Mouse moved and click sent to Zoom Workplace
+[OK] Wait 5 seconds
+[2025-12-30 19:32:52] tmv-red: ./click_new_meeting.sh completed
+
+[2025-12-30 19:32:53] tmv-red: ./change_to_speaker.sh started
+[OK] Meeting window found and maximize command sent
+[OK] Change to speaker view
+[2025-12-30 19:33:01] tmv-red: ./change_to_speaker.sh completed
+
+[2025-12-30 19:33:02] tmv-red: ./toggle_audio.sh started
+[OK] Sent Alt+A to Zoom
+[2025-12-30 19:33:03] tmv-red: ./toggle_audio.sh completed
+
+[2025-12-30 19:33:04] tmv-red: ./toggle_video.sh started
+[OK] Sent Alt+V to Zoom
+[2025-12-30 19:33:04] tmv-red: ./toggle_video.sh completed
+
+[2025-12-30 19:33:05] tmv-green: ./maximize_zoom.sh started
+[OK] Zoom window width matches screen width
+[INFO] Zoom window size: 1512x916, Screen size: 1512x948
+[2025-12-30 19:33:06] tmv-green: ./maximize_zoom.sh completed
+
+[2025-12-30 19:33:07] tmv-green: ./click_join_meeting.sh started
+[OK] Mouse moved and click sent to Zoom Workplace
+[OK] Wait 5 seconds
+[OK] Enter meeting ID
+[OK] Wait 3 seconds
+[OK] Enter meeting PW
+[OK] Wait 10 seconds
+[2025-12-30 19:33:28] tmv-green: ./click_join_meeting.sh completed
+
+[2025-12-30 19:33:29] tmv-green: ./change_to_speaker.sh started
+[OK] Meeting window found and maximize command sent
+[OK] Change to speaker view
+[2025-12-30 19:33:37] tmv-green: ./change_to_speaker.sh completed
+
+[2025-12-30 19:33:38] tmv-green: ./toggle_audio.sh started
+[OK] Sent Alt+A to Zoom
+[2025-12-30 19:33:38] tmv-green: ./toggle_audio.sh completed
+
+[2025-12-30 19:33:39] tmv-green: ./toggle_video.sh started
+[OK] Sent Alt+V to Zoom
+[2025-12-30 19:33:40] tmv-green: ./toggle_video.sh completed
+
+[2025-12-30 19:33:41] tmv-blue: ./maximize_zoom.sh started
+[OK] Zoom window width matches screen width
+[INFO] Zoom window size: 1512x916, Screen size: 1512x948
+[2025-12-30 19:33:42] tmv-blue: ./maximize_zoom.sh completed
+
+[2025-12-30 19:33:43] tmv-blue: ./click_join_meeting.sh started
+[OK] Mouse moved and click sent to Zoom Workplace
+[OK] Wait 5 seconds
+[OK] Enter meeting ID
+[OK] Wait 3 seconds
+[OK] Enter meeting PW
+[OK] Wait 10 seconds
+[2025-12-30 19:34:04] tmv-blue: ./click_join_meeting.sh completed
+
+[2025-12-30 19:34:05] tmv-blue: ./change_to_speaker.sh started
+[OK] Meeting window found and maximize command sent
+[OK] Change to speaker view
+[2025-12-30 19:34:13] tmv-blue: ./change_to_speaker.sh completed
+
+[2025-12-30 19:34:14] tmv-blue: ./toggle_audio.sh started
+[OK] Sent Alt+A to Zoom
+[2025-12-30 19:34:14] tmv-blue: ./toggle_audio.sh completed
+
+[2025-12-30 19:34:15] tmv-blue: ./toggle_video.sh started
+[OK] Sent Alt+V to Zoom
+[2025-12-30 19:34:15] tmv-blue: ./toggle_video.sh completed
+
+[2025-12-30 19:34:16] tmv-cyan: ./maximize_zoom.sh started
+[OK] Zoom window width matches screen width
+[INFO] Zoom window size: 1512x916, Screen size: 1512x948
+[2025-12-30 19:34:18] tmv-cyan: ./maximize_zoom.sh completed
+
+[2025-12-30 19:34:19] tmv-cyan: ./click_join_meeting.sh started
+[OK] Mouse moved and click sent to Zoom Workplace
+[OK] Wait 5 seconds
+[OK] Enter meeting ID
+[OK] Wait 3 seconds
+[OK] Enter meeting PW
+[OK] Wait 10 seconds
+[2025-12-30 19:34:40] tmv-cyan: ./click_join_meeting.sh completed
+
+[2025-12-30 19:34:41] tmv-cyan: ./change_to_speaker.sh started
+[OK] Meeting window found and maximize command sent
+[OK] Change to speaker view
+[2025-12-30 19:34:48] tmv-cyan: ./change_to_speaker.sh completed
+
+[2025-12-30 19:34:49] tmv-cyan: ./toggle_audio.sh started
+[OK] Sent Alt+A to Zoom
+[2025-12-30 19:34:50] tmv-cyan: ./toggle_audio.sh completed
+
+[2025-12-30 19:34:51] tmv-cyan: ./toggle_video.sh started
+[OK] Sent Alt+V to Zoom
+[2025-12-30 19:34:51] tmv-cyan: ./toggle_video.sh completed
+
+[2025-12-30 19:34:52] tmv-magenta: ./maximize_zoom.sh started
+[OK] Zoom window width matches screen width
+[INFO] Zoom window size: 1512x916, Screen size: 1512x948
+[2025-12-30 19:34:54] tmv-magenta: ./maximize_zoom.sh completed
+
+[2025-12-30 19:34:55] tmv-magenta: ./click_join_meeting.sh started
+[OK] Mouse moved and click sent to Zoom Workplace
+[OK] Wait 5 seconds
+[OK] Enter meeting ID
+[OK] Wait 3 seconds
+[OK] Enter meeting PW
+[OK] Wait 10 seconds
+[2025-12-30 19:35:16] tmv-magenta: ./click_join_meeting.sh completed
+
+[2025-12-30 19:35:17] tmv-magenta: ./change_to_speaker.sh started
+[OK] Meeting window found and maximize command sent
+[OK] Change to speaker view
+[2025-12-30 19:35:24] tmv-magenta: ./change_to_speaker.sh completed
+
+[2025-12-30 19:35:25] tmv-magenta: ./toggle_audio.sh started
+[OK] Sent Alt+A to Zoom
+[2025-12-30 19:35:25] tmv-magenta: ./toggle_audio.sh completed
+
+[2025-12-30 19:35:26] tmv-magenta: ./toggle_video.sh started
+[OK] Sent Alt+V to Zoom
+[2025-12-30 19:35:27] tmv-magenta: ./toggle_video.sh completed
+
+[2025-12-30 19:35:28] tmv-red: ./toggle_waiting_room.sh started
+[OK] Enable waiting room
+[2025-12-30 19:35:37] tmv-red: ./toggle_waiting_room.sh completed
+
+[2025-12-30 19:35:42] tmv-yellow: ./maximize_zoom.sh started
+[OK] Zoom window width matches screen width
+[INFO] Zoom window size: 1512x916, Screen size: 1512x948
+[2025-12-30 19:35:43] tmv-yellow: ./maximize_zoom.sh completed
+
+[2025-12-30 19:35:44] tmv-yellow: ./click_join_meeting.sh started
+[OK] Mouse moved and click sent to Zoom Workplace
+[OK] Wait 5 seconds
+[OK] Enter meeting ID
+[OK] Wait 3 seconds
+[OK] Enter meeting PW
+[OK] Wait 10 seconds
+[2025-12-30 19:36:05] tmv-yellow: ./click_join_meeting.sh completed
+
+[2025-12-30 19:36:06] tmv-magenta: ./action_third_pin.sh started
+[OK] Sent Alt+U to Zoom
+[OK] Action Pinning
+[2025-12-30 19:36:22] tmv-magenta: ./action_third_pin.sh completed
+
+[2025-12-30 19:36:32] tmv-green: ./action_fourth_pin.sh started
+[OK] Sent Alt+U to Zoom
+[OK] Action Pinning
+[2025-12-30 19:36:48] tmv-green: ./action_fourth_pin.sh completed
+
+[2025-12-30 19:36:58] tmv-cyan: ./action_second_pin.sh started
+[OK] Sent Alt+U to Zoom
+[OK] Action Pinning
+[2025-12-30 19:37:14] tmv-cyan: ./action_second_pin.sh completed
+
+[2025-12-30 19:37:24] tmv-blue: ./action_fourth_pin.sh started
+[OK] Sent Alt+U to Zoom
+[OK] Action Pinning
+[2025-12-30 19:37:41] tmv-blue: ./action_fourth_pin.sh completed
+
+[2025-12-30 19:37:51] tmv-blue: ./toggle_audio.sh started
+[OK] Sent Alt+A to Zoom
+[2025-12-30 19:37:51] tmv-blue: ./toggle_audio.sh completed
+
+[2025-12-30 19:38:01] tmv-red: ./toggle_end.sh started
+[OK] Sent Alt+Q to Zoom
+[OK] Sent Enter to Zoom
+[2025-12-30 19:38:05] tmv-red: ./toggle_end.sh completed
+
+[2025-12-30 19:38:06] tmv-red: ./stop_record.sh started
+[2025-12-30 19:38:06] tmv-green: ./stop_record.sh started
+[2025-12-30 19:38:06] tmv-blue: ./stop_record.sh started
+[2025-12-30 19:38:06] tmv-yellow: ./stop_record.sh started
+[2025-12-30 19:38:06] tmv-cyan: ./stop_record.sh started
+[2025-12-30 19:38:06] tmv-magenta: ./stop_record.sh started
+[OK] Recording stopped
+[OK] Recording stopped
+[OK] tcpdump stopped
+[OK] tcpdump stopped
+[2025-12-30 19:38:06] tmv-red: ./stop_record.sh completed
+
+[2025-12-30 19:38:06] tmv-blue: ./stop_record.sh completed
+
+[OK] Recording stopped
+[OK] Recording stopped
+[OK] Recording stopped
+[OK] tcpdump stopped
+[OK] tcpdump stopped
+[OK] tcpdump stopped
+[2025-12-30 19:38:06] tmv-yellow: ./stop_record.sh completed
+
+[2025-12-30 19:38:06] tmv-cyan: ./stop_record.sh completed
+
+[2025-12-30 19:38:06] tmv-green: ./stop_record.sh completed
+
+[OK] Recording stopped
+[OK] tcpdump stopped
+[2025-12-30 19:38:06] tmv-magenta: ./stop_record.sh completed
+

@@ -1,0 +1,22 @@
+[2025-12-30 23:13:07] tmv-yellow: ./start_record.sh started
+[OK] Recording started (PID 847499)
+[OK] Tcpdump started (PID 847500)
+[2025-12-30 23:13:08] tmv-yellow: ./start_record.sh completed
+
+[2025-12-30 23:14:16] tmv-yellow: ./click_join_meeting.sh keo-ytfs-xis started
+[INFO] Target Google Meet URL: https://meet.google.com/keo-ytfs-xis
+[OK] Found Firefox window: 35651605
+[OK] Enter key sent. Google Meet opening.
+[OK] Clicked join button
+[2025-12-30 23:14:26] tmv-yellow: ./click_join_meeting.sh keo-ytfs-xis completed
+
+[2025-12-30 23:16:21] tmv-yellow: ./stop_record.sh started
+[OK] Recording stopped
+[OK] tcpdump stopped
+[2025-12-30 23:16:22] tmv-yellow: ./stop_record.sh completed
+
+[2025-12-30 23:16:22] tmv-yellow: ./toggle_end.sh started
+[INFO] Navigating to https://meet.google.com
+[OK] Found Firefox window: 35651605
+[2025-12-30 23:16:29] tmv-yellow: ./toggle_end.sh completed
+

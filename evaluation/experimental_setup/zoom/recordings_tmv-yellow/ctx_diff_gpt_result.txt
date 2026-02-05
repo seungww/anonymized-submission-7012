@@ -1,0 +1,7 @@
+== GLOBAL SUMMARY ==
+files_total=122
+files_matched=122
+files_mismatched=0
+files_missing_in_adj=0
+audio_total: match=732, mismatch=0, missing_value_in_adj=0, missing_value_in_ori=0
+video_total: match=732, mismatch=0, missing_value_in_adj=0, missing_value_in_ori=0

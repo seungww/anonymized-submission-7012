@@ -42,6 +42,33 @@ This repository contains research artifacts for **UNVEIL**, a dynamic testing pi
 - `*.user`  : user-aware flow set derived from UI context  
 - `*.net`   : network-level flow set derived from packet traces  
 - `*.result`: detected mismatches between `.user` and `.net`
+- All results mentioned in the Evaluation section can be found in the `evaluation/` directory.
+
+## Example Usage
+
+### Generate a `.ui` file from UI images
+```bash
+python vlm_based_inference/extract_labels_from_ui.py \
+    --pcap ./evaluation/experimental_setup/zoom/recordings_tmv-red/preprocessed_tcpdump_20251230_103245.pcap \
+    --target evaluation/experimental_setup/zoom/recordings_tmv-red/record_20251230_103245_adj
+```
+
+### Generate a `.net` file from packet traces
+```bash
+python protocol_reverse_engineering/extract_ci_from_hex_for_zoom.py \
+    --hex evaluation/experimental_setup/zoom/recordings_tmv-red/preprocessed_tcpdump_20251230_103245.hex \
+    --client Alice \
+    --usermap evaluation/experimental_setup/zoom/usermap_recordings_20251230.json
+```
+
+### Run the consistency checker on a Zoom session
+
+```bash
+python evaluation/consistency_checker/stats_eval_for_zoom.py \
+    --user evaluation/consistency_checker/zoom/recordings_tmv-red/20251230_103245.user \
+    --net evaluation/consistency_checker/zoom/recordings_tmv-red/20251230_103245.net \
+    --client Alice
+```
 
 ## Notes
 
@@ -51,14 +78,3 @@ This repository contains research artifacts for **UNVEIL**, a dynamic testing pi
 - In `.net` files, when multimedia data is broadcast to all participants in a meeting room, the sender and recipient are set to the same name for convenience.
 - Some subdirectories (e.g., `evaluation/network_level_flow/*/netplier` and `binaryinferno`) include baseline tooling/results for boundary inference comparisons.
 - Due to repository size constraints, some files (e.g., videos and images) are not included in this repository snapshot.
-
-## Example Usage
-
-Run the consistency checker on a Zoom session:
-
-```bash
-python stats_eval_for_zoom.py 
-  --user zoom/recordings_tmv-red/20251230_103245.user \
-  --net zoom/recordings_tmv-red/20251230_103245.net \
-  --client Alice
-

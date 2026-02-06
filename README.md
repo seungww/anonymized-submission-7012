@@ -57,8 +57,8 @@ This repository contains research artifacts for **UNVEIL**, a dynamic testing pi
 Run the consistency checker on a Zoom session:
 
 ```bash
-python stats_eval_for_zoom.py zoom/recordings_tmv-red/20251230_103245.user \
-  --net zoom/recordings_tmv-red/20251230_103245.net \
+python stats_eval_for_zoom.py 
   --user zoom/recordings_tmv-red/20251230_103245.user \
+  --net zoom/recordings_tmv-red/20251230_103245.net \
   --client Alice
 

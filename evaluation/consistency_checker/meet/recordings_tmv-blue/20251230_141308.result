@@ -1,11 +1,8 @@
-Total: 118355
-Empty: 495
-Found TRIPLE: 27197
-Found PERFECT: 56155
-Found PARTIAL: 19059
-Case 1: 0
-Case 2: 0
-Others: 15449
+Observed: 118355
+Labeled: 117860
+Mismatched(Control): 0
+Mismatched(Data): 15449
+Mismatched(Data) breakdown:
 - David_Charlie_David_video_low: 9804
 - Alice_Charlie_Alice_video_high: 2834
 - Emily_Charlie_Emily_video_high: 1409

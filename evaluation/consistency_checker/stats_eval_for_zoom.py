@@ -13,19 +13,23 @@ def parse_tok(s: str) -> Optional[Token]:
         return None
     return parts[0], parts[1], parts[2], parts[3], (parts[4] if len(parts) >= 5 else None)
 
+def parse_user_line(s: str) -> List[Token]:
+    toks = [parse_tok(tok) for tok in re.split(r"[,\s]+", s.strip()) if tok.strip()]
+    return [t for t in toks if t]
+
 def is_self_triple(t: Token) -> bool:
     a, b, c = t[0].lower(), t[1].lower(), t[2].lower()
     return a == b == c
 
-def base_val(t: str, v_opt: Optional[str]) -> str:
+def base_val(v_opt: Optional[str]) -> str:
     return (v_opt or "on").lower()
 
-def net_values(t: str, v: str) -> List[str]:
-    t = t.lower()
+def net_values(tt: str, v: str) -> List[str]:
+    tt = tt.lower()
     v = v.lower()
-    if t == "video":
+    if tt == "video":
         return ["high", "medium", "low"] if v == "on" else [v]
-    if t == "audio":
+    if tt == "audio":
         return ["unmute"] if v == "on" else [v]
     return [v]
 
@@ -33,84 +37,61 @@ def user_accept_video(v: str) -> List[str]:
     v = v.lower()
     if v == "on":
         return ["high", "medium", "low"]
-    if v == "high":
-        return ["high"]
-    if v == "medium":
-        return ["medium"]
-    if v == "low":
-        return ["low"]
+    if v in ("high", "medium", "low"):
+        return [v]
     return []
 
-def classify_on_items(net_item: Token, user_items: List[Token]) -> Tuple[Optional[str], str]:
-    """
-    Return:
-      - 'PERFECT'
-      - 'PARTIAL'
-      - None  (no match)
-    """
+def classify_labeled_match(net_item: Token, user_items: List[Token]) -> bool:
     ns, nr, nj, nt, nv = net_item
     ntl = nt.lower()
-    n_base = base_val(nt, nv)
+    n_base = base_val(nv)
     n_vals = net_values(ntl, n_base)
 
     candidates = [
         u for u in user_items
-        if u and u[3].lower() == ntl
+        if u[3].lower() == ntl
         and (u[0].lower(), u[1].lower(), u[2].lower()) == (ns.lower(), nr.lower(), nj.lower())
     ]
     if not candidates:
-        return None, "no triple match"
+        return False
 
     for us, ur, uj, ut, uv in candidates:
-        u_base = base_val(ut, uv)
+        u_base = base_val(uv)
 
         if ntl == "video":
-            if (
-                n_base in ("high", "medium", "low")
-                and u_base in ("high", "medium", "low")
-                and n_base == u_base
-            ):
-                return "PERFECT", f"video exact match {n_base}"
-
+            if n_base in ("high", "medium", "low") and u_base in ("high", "medium", "low") and n_base == u_base:
+                return True
             if any(v in user_accept_video(u_base) for v in n_vals):
-                return "PARTIAL", f"video acceptable range {n_vals} vs user {u_base}"
+                return True
 
         elif ntl == "audio":
             n_eff = "unmute" if n_base == "on" else n_base
             u_eff = "unmute" if u_base == "on" else u_base
             if n_eff == u_eff:
-                if n_base != "on" and u_base != "on":
-                    return "PERFECT", f"audio exact match {n_eff}"
-                return "PARTIAL", (
-                    f"audio mapped via on ({n_base}->{n_eff}, {u_base}->{u_eff})"
-                )
+                return True
 
-    return None, "value mismatch"
-
-def parse_user_line(s: str) -> List[Token]:
-    tokens = [parse_tok(tok) for tok in re.split(r"[,\s]+", s.strip()) if tok.strip()]
-    return [t for t in tokens if t]
-
-def debug_log(enabled: bool, line_no: int, tag: str, message: str) -> None:
-    if enabled:
-        print(f"[{line_no:04d}] {tag}: {message}")
+    return False
 
 def token_to_key(t: Token) -> str:
-    """Convert token to output key like Alice_Bob_Charlie_video_high."""
     a, b, c, d, v = t
-    if v:
-        return f"{a}_{b}_{c}_{d}_{v}"
-    return f"{a}_{b}_{c}_{d}"
+    return f"{a}_{b}_{c}_{d}_{v}" if v else f"{a}_{b}_{c}_{d}"
 
-def main():
-    ap = argparse.ArgumentParser(
-        description="Compare net/user entries with PERFECT/PARTIAL match and Case classification."
-    )
+def bump(d: Dict[str, int], k: str) -> None:
+    d[k] = d.get(k, 0) + 1
+
+def print_counts(title: str, d: Dict[str, int]) -> None:
+    if not d:
+        return
+    print(title)
+    for k, v in sorted(d.items(), key=lambda x: (-x[1], x[0])):
+        print(f"- {k}: {v}")
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
     ap.add_argument("--net", required=True)
     ap.add_argument("--user", required=True)
     ap.add_argument("--client", required=True)
     ap.add_argument("--limit", type=int, default=100000)
-    ap.add_argument("--debug", action="store_true")
     args = ap.parse_args()
 
     net_lines = open(args.net, encoding="utf-8").readlines()
@@ -119,77 +100,59 @@ def main():
 
     user_items_per_line = [parse_user_line(u) for u in user_lines[:n]]
 
-    total = n
-    empty = 0
-    found_triple = 0
-    found_perfect = 0
-    found_partial = 0
-    case1 = 0
-    case2 = 0
-    others = 0
+    observed = n
+    labeled = 0
+    mismatched_control = 0
+    mismatched_data = 0
 
-    others_count: Dict[str, int] = {}
+    control_counts: Dict[str, int] = {}
+    data_counts: Dict[str, int] = {}
+
+    waiting_user_all_control = (args.client.lower() == "fred")
 
     for i in range(n):
-        ln = i + 1
         net_raw = net_lines[i].strip()
-
         if not net_raw:
-            empty += 1
-            debug_log(args.debug, ln, "EMPTY", "net line empty")
             continue
+
+        labeled += 1
 
         net_item = parse_tok(net_raw)
         if not net_item:
-            others += 1
-            others_count[net_raw] = others_count.get(net_raw, 0) + 1
-            debug_log(args.debug, ln, "INVALID", f"cannot parse net='{net_raw}'")
+            if waiting_user_all_control:
+                mismatched_control += 1
+                bump(control_counts, net_raw)
+            else:
+                mismatched_data += 1
+                bump(data_counts, net_raw)
             continue
 
         if is_self_triple(net_item):
-            found_triple += 1
-            debug_log(args.debug, ln, "TRIPLE", f"net='{net_raw}'")
             continue
 
-        user_items = user_items_per_line[i]
-        kind, reason = classify_on_items(net_item, user_items)
-
-        if kind == "PERFECT":
-            found_perfect += 1
-            debug_log(args.debug, ln, "PERFECT", f"net='{net_raw}' {reason}")
+        if classify_labeled_match(net_item, user_items_per_line[i]):
             continue
 
-        if kind == "PARTIAL":
-            found_partial += 1
-            debug_log(args.debug, ln, "PARTIAL", f"net='{net_raw}' {reason}")
+        if waiting_user_all_control:
+            mismatched_control += 1
+            bump(control_counts, token_to_key(net_item))
             continue
 
         _, rec, subj, _, _ = net_item
         if rec and subj and rec.lower() == subj.lower():
-            if rec.lower() == args.client.lower():
-                case1 += 1
-                debug_log(args.debug, ln, "CASE1", f"net='{net_raw}'")
-            else:
-                case2 += 1
-                debug_log(args.debug, ln, "CASE2", f"net='{net_raw}'")
-            continue
+            mismatched_control += 1
+            bump(control_counts, token_to_key(net_item))
+        else:
+            mismatched_data += 1
+            bump(data_counts, token_to_key(net_item))
 
-        others += 1
-        key = token_to_key(net_item)
-        others_count[key] = others_count.get(key, 0) + 1
-        debug_log(args.debug, ln, "OTHERS", f"net='{net_raw}'")
+    print("Observed:", observed)
+    print("Labeled:", labeled)
+    print("Mismatched(Control):", mismatched_control)
+    print("Mismatched(Data):", mismatched_data)
 
-    print("Total:", total)
-    print("Empty:", empty)
-    print("Found TRIPLE:", found_triple)
-    print("Found PERFECT:", found_perfect)
-    print("Found PARTIAL:", found_partial)
-    print("Case 1:", case1)
-    print("Case 2:", case2)
-    print("Others:", others)
-
-    for k, v in sorted(others_count.items(), key=lambda x: -x[1]):
-        print(f"- {k}: {v}")
+    print_counts("Mismatched(Control) breakdown:", control_counts)
+    print_counts("Mismatched(Data) breakdown:", data_counts)
 
 if __name__ == "__main__":
     main()

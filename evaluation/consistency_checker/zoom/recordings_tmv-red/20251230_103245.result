@@ -1,11 +1,22 @@
-Total: 32737
-Empty: 1721
-Found TRIPLE: 11501
-Found PERFECT: 16830
-Found PARTIAL: 646
-Case 1: 68
-Case 2: 156
-Others: 1815
+Observed: 32737
+Labeled: 31016
+Mismatched(Control): 224
+Mismatched(Data): 1815
+Mismatched(Control) breakdown:
+- Alice_Charlie_Charlie_video_low: 68
+- Alice_Bob_Bob_video_low: 46
+- Charlie_Alice_Alice_video_low: 34
+- David_Alice_Alice_video_low: 20
+- Alice_David_David_video_low: 18
+- Alice_Emily_Emily_video_low: 14
+- Charlie_Alice_Alice_video_high: 6
+- Alice_Bob_Bob_video_high: 4
+- Bob_Alice_Alice_video_low: 4
+- Emily_Alice_Alice_video_low: 4
+- Alice_Charlie_Charlie_video_high: 2
+- Alice_David_David_video_high: 2
+- Alice_Emily_Emily_video_high: 2
+Mismatched(Data) breakdown:
 - Bob_Alice_Bob_video_high: 712
 - Charlie_Alice_Charlie_video_high: 634
 - Emily_Alice_Emily_video_high: 203

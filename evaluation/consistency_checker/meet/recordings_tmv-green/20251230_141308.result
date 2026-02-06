@@ -1,11 +1,8 @@
-Total: 112635
-Empty: 502
-Found TRIPLE: 20457
-Found PERFECT: 49140
-Found PARTIAL: 33165
-Case 1: 0
-Case 2: 0
-Others: 9371
+Observed: 112635
+Labeled: 112133
+Mismatched(Control): 0
+Mismatched(Data): 9371
+Mismatched(Data) breakdown:
 - Emily_Bob_Emily_video_low: 2149
 - Alice_Bob_Alice_video_high: 1623
 - David_Bob_David_video_high: 1122
